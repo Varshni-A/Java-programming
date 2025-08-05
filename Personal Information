@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class UserDetails{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter First Name:");
+        String firstName=scanner.nextLine();
+        System.out.print("Enter Last Name:");
+        String lastName=scanner.nextLine();
+        System.out.print("Enter Age:");
+        int age=scanner.nextInt();
+        System.out.print("Enter Height:");
+        double height=scanner.nextDouble();
+        System.out.print("Enter Weight:");
+        float weight=scanner.nextFloat(); 
+        System.out.print("Are you a student?(true/false):");
+        boolean isStudent=scanner.nextBoolean();
+        System.out.print("Enter Contact Number:");
+        long contactNumber=scanner.nextLong();
+        System.out.print("Enter Gender(M/F):");
+        char gender=scanner.next().charAt(0);
+        System.out.print("Enter your grade level(1-12):");
+        byte gradeLevel=scanner.nextByte();
+    }
+} 
