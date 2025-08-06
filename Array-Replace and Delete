@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String[] arr = new String[5];
+        System.out.println("Enter 5 strings:");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = scanner.nextLine();
+        }
+        System.out.println("Original array:");
+        for (String item : arr) {
+            System.out.println(item);
+        }
+    arr[2] = "Replaced_Value";
+        System.out.println("\nAfter replacing index 2:");
+        for (String item : arr) {
+            System.out.println(item);
+        }
+        for (int i = 3; i < arr.length - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
+        arr[arr.length - 1] = null; 
+        System.out.println("\nAfter deleting index 3:");
+        for (String item : arr) {
+            System.out.println(item);
+        }
+    }
+}
+ 
+
