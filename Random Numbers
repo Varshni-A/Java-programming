@@ -1,0 +1,22 @@
+//Program
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter the SN: ");
+        int SN=scanner.nextInt();
+        System.out.print("Enter the EN: ");
+        int EN=scanner.nextInt();
+        double random=SN+(Math.random()*((SN+EN)+1));
+        System.out.println(random);
+    }
+}
+
+//Output
+Enter the SN: 5
+Enter the EN: 4
+14.308567230459191
+
+
+
+
