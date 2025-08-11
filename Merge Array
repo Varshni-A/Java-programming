@@ -1,0 +1,50 @@
+//Program
+class Main {
+    public static void main(String[] args) {
+        int[] arr1 = {1, 2, 3, 4, 5};
+        int[] arr2 = {6, 7, 8, 9, 10};
+        int[] mergeArray = new int[arr1.length + arr2.length];
+        for (int i = 0; i < arr1.length; i++) {
+            mergeArray[i] = arr1[i];
+        }
+        for (int i = 0; i < arr2.length; i++) {
+            mergeArray[arr1.length + i] = arr2[i];
+        }
+        for (int x : mergeArray) {
+            System.out.println(x);
+        }
+    }
+}
+//Output
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+//Program
+class Main {
+    public static void main(String[] args) {
+        int[] arr1 = {1, 2, 3, 4, 5};
+        int[] arr2 = {6, 7, 8, 9, 10};
+        int[] sumArray = new int[arr1.length];
+        for (int i = 0; i < arr1.length; i++) {
+            sumArray[i] = arr1[i] + arr2[i];
+        }
+        for (int x : sumArray) {
+            System.out.println(x);
+        }
+    }
+}
+//Output
+7
+9
+11
+13
+15
