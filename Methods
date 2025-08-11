@@ -1,0 +1,225 @@
+//Program
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+         System.out.print("Enter a number (1 to 20): ");
+        int target = scanner.nextInt();
+        System.out.println("Combinations that sum to " + target + ":\n");
+         for (int a = 1; a <= 1; a++) {  
+            for (int b = 1; b <= 1; b++) {  
+                for (int i = 1; i <= 10; i++) {  
+                    for (int j = 1; j <= 10; j++) {  
+                        if (i + j == target) {
+                            System.out.println(i + " + " + j + " = " + target);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Output
+Enter a number (1 to 20): 5
+Combinations that sum to 5:
+
+1 + 4 = 5
+2 + 3 = 5
+3 + 2 = 5
+4 + 1 = 5
+
+
+
+//Program
+class Main {
+    static void myMethod(String name) {
+        System.out.println(name);
+    }
+    public static void main(String[] num) {
+        System.out.println("varshni");
+    }
+}
+//Output
+varshni
+
+
+//Program
+class Main {
+    static void myMethod(int x,int y) {
+        System.out.println(x+y);
+    }
+    public static void main(String[] num) {
+        myMethod(1,1);
+    }
+}
+//Output
+2
+
+
+//Program
+class Main {
+    static void myMethod(String fname,String lname) {
+        System.out.println(fname + lname);
+    }
+    public static void main(String[] args) {
+        myMethod("varshni"," asina");
+    }
+}
+//Output
+varshni asina
+
+
+//Program
+class Main {
+    static void myMethod(String fname,int age,double height,int weight) {
+        System.out.println(fname+" "+age+" "+height+" "+weight);
+    }
+    public static void main(String[] args) {
+        myMethod("varshni", 19 , 5.2 , 55 );
+    }
+}
+//Output
+varshni 19 5.2 55
+
+
+//Program
+import java.util.Scanner;
+public class Calculator {
+    public static double add(double a,double b) {
+        return a+b;
+    }
+    public static double subtract(double a,double b) {
+        return a-b;
+    }
+    public static double multiply(double a,double b) {
+        return a*b;
+    }
+    public static double divide(double a,double b) {
+        if (b==0) {
+            System.out.println("Error:Division by zero!");
+            return 0;
+        }
+        return a/b;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter first number:");
+        double num1=sc.nextDouble();
+        System.out.print("Enter second number:");
+        double num2=sc.nextDouble();
+        System.out.println("\nChoose operation:");
+        System.out.println("1.Addition");
+        System.out.println("2.Subtraction");
+        System.out.println("3.Multiplication");
+        System.out.println("4.Division");
+        System.out.print("Enter your choice:");
+        int choice=sc.nextInt();
+        double result=0;
+        switch(choice) {
+            case 1:
+                result=add(num1, num2);
+                break;
+            case 2:
+                result=subtract(num1, num2);
+                break;
+            case 3:
+                result=multiply(num1, num2);
+                break;
+            case 4:
+                result=divide(num1, num2);
+                break;
+            default:
+                System.out.println("Invalid choice!");
+                return;
+        }
+        System.out.println("Result:"+result);
+    }
+}
+
+//Output
+Enter first number:6
+Enter second number:2
+
+Choose operation:
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+Enter your choice:3
+Result:12.0
+
+
+//Program
+import java.util.Scanner;
+public class Instagram {
+    public static void myMethod(String username, String password) {
+        String correctUsername = "varshni";
+        String correctPassword = "1234";
+        if (username.equals(correctUsername) && password.equals(correctPassword)) {
+            System.out.println("Successfully Logged In");
+        } else {
+            System.out.println("Invalid username or password");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter username: ");
+        String enteredUsername = scanner.nextLine();
+        System.out.print("Enter password: ");
+        String enteredPassword = scanner.nextLine();
+        myMethod(enteredUsername, enteredPassword);
+    }
+}
+//Output
+Enter username: varshni
+Enter password: 1234
+Successfully Logged In
+
+
+//Program
+import java.util.Scanner;
+public class Instagram {
+    public static void myMethod(String defaultUsername, String defaultPassword) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter username to login: ");
+        String enteredUsername = scanner.nextLine();
+        System.out.print("Enter password to login: ");
+        String enteredPassword = scanner.nextLine();
+        if (enteredUsername.equals(defaultUsername) && enteredPassword.equals(defaultPassword)) {
+            System.out.println("Logged in successfully");
+        } else {
+            System.out.println("Invalid username or password");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Set default username: ");
+        String defaultUsername = scanner.nextLine();
+        System.out.print("Set default password: ");
+        String defaultPassword = scanner.nextLine();
+        myMethod(defaultUsername, defaultPassword);
+    }
+}
+//Output
+Set default username: admin
+Set default password: 2705
+Enter username to login: admin
+Enter password to login: 2705
+Logged in successfully
+
+
+//Program
+class sample{
+    public void add() {
+        int x=10;int y=15;
+        System.out.println(x+y);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        sample obj=new sample();
+        obj.add();
+    }
+}
+//Output
+25
