@@ -1,0 +1,299 @@
+//Program
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+	    Scanner x = new Scanner(System.in);
+	    System.out.println("Enter any String:");
+	    String n=x.nextLine();
+	    char mystr= n.charAt(0);
+		System.out.println(mystr);
+	
+	    int my= n.codePointAt(3);
+		System.out.println(my);
+
+		int m =n.codePointBefore(7);
+		System.out.println(m);	
+	}
+}
+//Output
+Enter any String:
+varshni
+v
+115
+105
+
+//Program
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter any String1:");
+        String str1 = x.nextLine();
+        System.out.println("Enter any String2:");
+        String str2 = x.nextLine();
+
+        int mystr = str1.codePointCount(0, str1.length());
+        System.out.println(mystr);
+
+        int my = str1.compareTo(str2);
+        System.out.println(my);
+    }
+}
+//Output
+Enter any String1:
+varshni
+Enter any String2:
+asina
+7
+21
+
+
+//Program
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter any String1:");
+        String str1 = x.nextLine();
+        System.out.println("Enter any String2:");
+        String str2 = x.nextLine();
+
+        int my = str1.compareToIgnoreCase(str2);
+        System.out.println(my);
+        
+        String mystr = str1.concat(str2);
+        System.out.println(mystr);
+    }
+}
+//Output
+Enter any String1:
+VARSHNI
+Enter any String2:
+varshni
+0
+VARSHNIvarshni
+
+
+//Program
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter any String1:");
+        String str1 = x.nextLine();
+      
+        boolean my = str1.contains("Hello");
+        System.out.println(my);
+        
+        boolean mystr = str1.contentEquals("Hello");
+        System.out.println(mystr);
+    }
+}
+//Output
+Enter any String1:
+Hello
+true
+true
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        char[] data = {'V','A','R','S','H','N','I'};
+        
+        String str = String.copyValueOf(data, 0, 7);
+        System.out.println(str);
+
+        System.out.println(str.endsWith("I"));
+    }
+}
+//Output
+VARSHNI
+true
+
+
+//Program
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of characters: ");
+        int n = sc.nextInt();
+        char[] data = new char[n];
+        System.out.println("Enter characters:");
+        for (int i = 0; i < n; i++) {
+            data[i] = sc.next().charAt(0);
+        }
+
+        String str = String.copyValueOf(data, 0, n);
+        System.out.println("The string is: " + str);
+        System.out.println(str.endsWith("I"));
+    }
+}
+//Output
+Enter number of characters: 7
+Enter characters:
+V A R S H N I
+The string is: VARSHNI
+true
+
+
+//Program
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        String data = "hello";
+        String hi = "hi %s my age %d";
+       
+        System.out.println(data.equalsIgnoreCase("hello"));
+        System.out.printf(hi, "hello", 18);
+    }
+}
+//Output
+hi hello my age is 18
+
+
+//Program
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a name: ");
+        String data = sc.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+        String hi = "hi %s my age %d";
+        System.out.println(data.equalsIgnoreCase("varshni"));
+        System.out.printf(hi, data, age);
+
+    }
+}
+//Output
+Enter a name: varshni
+Enter your age: 19
+true
+hi varshni my age 19
+true
+hi hello my age 18
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        char[] data={'0','1','2','3','4','5','6','7','8','9'};
+        System.out.println(data);
+        String mystring="Hello World!";
+        mystring.getChars(7,11,data,4);
+        System.out.println(data);
+ }
+}
+//Output
+0123456789
+0123orld89
+
+
+//Progarm
+public class Main {
+    public static void main(String[] args) {
+        char[] data={'9','1','6','1'};
+        System.out.print(data);
+        String mystring="Varshni";
+        mystring.getChars(7,7,data,0);
+        System.out.print(mystring);
+ }
+}
+//Output
+9161Varshni
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String name="Varshni";
+        byte[] arr=name.getBytes();
+        System.out.print(arr[0]);
+    }
+}
+//Output
+86
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String name="Varshni";
+        byte[] arr=name.getBytes();
+        System.out.print(name.hashCode());
+    }
+}
+//Output
+1901743703
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String name="varshni";
+        System.out.print(name.toUpperCase());
+    }
+}
+//Output
+VARSHNI
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String name="VARSHNI";
+        System.out.print(name.toLowerCase());
+    }
+}
+//Output
+varshni
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String name="varshni asina";
+        System.out.print(name.indexOf("asina"));
+    }
+}
+//Output
+8
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String name="Hello World";
+        String names="";
+        System.out.println(name.isEmpty());
+        System.out.println(names.isEmpty());
+    }
+}
+//Output
+false
+true
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String name=String.join(" ","Varshni","Adaikkalam");
+        System.out.println(name);
+    }
+}
+//Output
+Varshni Adaikkalam
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String name=String.join("Hello World");
+        System.out.println(name.lastIndexOf("World"));
+    }
+}
+//Output
+-1
