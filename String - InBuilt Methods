@@ -297,3 +297,181 @@ public class Main {
 }
 //Output
 -1
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String a="Hello Varshni";
+        String b="World Asina";
+        String x = "Varshni|Asina|Begum";
+        System.out.println("Varshni".matches(x));
+        System.out.println("Asina".matches(x));
+        System.out.println("Java".matches(x));
+        System.out.println(a.regionMatches(7,a,7,5));
+    }
+}
+//Output
+true
+true
+false
+true
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String x="World";
+        String y="World Varshni World";
+        System.out.println(x.replace('l','p'));
+        
+        String a = "(?i)World";
+        System.out.println(y.replaceAll(a,"Hii"));
+        String b = "World";
+        System.out.println(y.replaceFirst(b,"Hii"));
+    }
+}
+//Output
+Worpd
+Hii Varshni Hii
+Hii Varshni World
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String x="Hello World";
+        String y="[,\\.\\s]";
+        String[] z=x.split(y);
+        for(String  s:z){
+        System.out.println(s);
+    }
+}
+}
+//Output
+Hello
+World
+
+
+//Progarm
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String x = sc.nextLine();
+        String y = "[\\.\\s]";
+        String[] z = x.split(y);
+        for (String s : z) {
+            System.out.println(s);
+        }
+    }
+}
+//Output
+Enter a string: Varshni Adaikkalam
+Varshni
+Adaikkalam
+
+
+
+//Program
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String x = sc.nextLine();
+        String y = " ";
+        String[] z = x.split(y);
+        for (String s : z) {
+            System.out.println(s);
+        }
+        System.out.println(x.concat(y));
+    }
+}
+//Output
+Enter a string: Varshni Adaikkalam
+Varshni
+Adaikkalam
+Varshni Adaikkalam 
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String a="Hello";
+        System.out.println(a.startsWith("Hello"));
+        System.out.println(a.startsWith("World"));
+    }
+}
+//Output
+true
+false
+
+
+//Program
+public class Main {
+    public static void main(String[] args) {
+        String x="Hello World";
+        String a=(x.substring(0,5));
+        System.out.println(a);
+        String b=(x.substring(6,11));
+        System.out.println(b);
+        System.out.println(a.concat(" "+b));
+	}
+  }
+//Output
+Hello
+World
+Hello World
+
+
+//Program
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        String x = "Hello World";
+        char[] y = x.toCharArray();   
+        System.out.println(y[0]); 
+    }
+}
+//Output
+H
+
+
+//Program
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter a string: ");
+        String x = scanner.nextLine();          
+            System.out.println(x.toUpperCase());       
+            System.out.println(x.toLowerCase());       
+        }
+    }
+//Output
+Enter a string: Varshni
+VARSHNI
+varshni
+
+
+
+//Program
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter a string: ");
+        String x = scanner.nextLine();          
+            System.out.println(x); 
+            System.out.println(x.trim()); 
+            System.out.println(String.valueOf(x));    
+                 
+        }
+    }
+//Output
+Enter a string:    Varshni Adaikkalam
+    Varshni Adaikkalam
+Varshni Adaikkalam
+    Varshni Adaikkalam
