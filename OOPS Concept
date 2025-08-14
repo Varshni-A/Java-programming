@@ -1,0 +1,231 @@
+//Program
+class Cars {
+    void sound(){
+         System.out.println("Cars makes a sound");
+    }
+}
+class BMW extends Cars {
+    void sound(){
+         System.out.println("BMW");
+    }
+}
+class Audi extends Cars {
+    void sound(){
+         System.out.println("Audi");
+    }
+}
+class Benz extends Cars {
+    void sound(){
+         System.out.println("Benz");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Cars a;
+        a=new BMW();
+        a.sound();
+        
+        a=new Audi();
+        a.sound();
+        
+        a=new Benz();
+        a.sound();
+    }
+}
+//Output
+BMW
+Audi
+Benz
+
+//Program
+import java.util.Scanner;
+class parent{
+    void name(){
+        System.out.println("Family Details");
+    }
+}
+class grandpa extends parent{
+    void name(String N){
+        System.out.println("GrandFather:"
+        +N);
+    }
+}
+class grandma extends parent{
+    void name(String N){
+        System.out.println("GrandMother:"+N);
+    }
+}public class Main
+{
+	public static void main(String[] args) {
+	    
+	    grandpa gp= new grandpa();
+	    
+	    Scanner n= new Scanner(System.in);
+	    System.out.println("Enter grandfather name:");
+	    String grandpaName=n.nextLine();
+	    gp.name(grandpaName);
+	    System.out.println("Enter grandmother name:");
+		String grandmaName=n.nextLine();
+	    grandma gm= new grandma();
+	    gm.name(grandmaName);
+}
+}
+//Output
+Enter grandfather name:
+Velu
+GrandFather:Velu
+Enter grandmother name:
+Selvi
+GrandMother:Selvi
+
+
+//Program
+class Family {
+    void sound(){
+         System.out.println("These are my family members");
+    }
+}
+class Grandparents extends Family {
+    void sound(){
+         System.out.println("Velu");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Family a;
+        a=new Grandparents();
+        a.sound();
+    }
+}
+//Output
+Velu
+
+
+//Program
+class Vehical {
+    void vehical(){
+         System.out.println("This is a vehicle");
+    }
+}
+class FourWheeler extends Vehical {
+    FourWheeler(){
+         System.out.println("This is a FourWheeler");
+    }
+}
+class Car extends FourWheeler {
+    Car(){
+         System.out.println("This is a Car");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Car obj=new Car();
+    }
+}
+//Output
+This is a FourWheeler
+This is a Car
+
+
+//Program
+class Grandparents {
+    void Grandparents(){
+         System.out.println("This is my Grandparents");
+    }
+}
+class Cousins extends Grandparents {
+     Cousins(){
+         System.out.println("Pavi");
+         System.out.println("Suba");
+    }
+}
+class FatherMother extends Cousins {
+    FatherMother(){
+         System.out.println("Adaikkalam");
+         System.out.println("Kalai Selvi");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        FatherMother obj=new FatherMother();
+    }
+}
+//Output
+Pavi
+Suba
+Adaikkalam
+Kalai Selvi
+
+
+
+//Program
+import java.util.Scanner;
+
+class Vehicle {
+    void name() {
+        System.out.println("Vehicle Details");
+    }
+}
+
+class Car extends Vehicle {
+    void name(String n) {
+        System.out.println("Car Name: " + n);
+    }
+}
+
+class Bike extends Vehicle {
+    void name(String n) {
+        System.out.println("Bike Name: " + n);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Car car = new Car();
+        System.out.print("Enter car name: ");
+        String carName = sc.nextLine();
+        car.name(carName);
+
+        Bike bike = new Bike();
+        System.out.print("Enter bike name: ");
+        String bikeName = sc.nextLine();
+        bike.name(bikeName);
+    }
+}
+//Output
+Enter car name: benz    Benz
+Car Name: Benz
+Enter bike name: Royal Em nfield
+Bike Name: Royal Enfield
+
+
+//Program
+interface Audi {
+    default void modelOfAudi(){
+         System.out.println("This is a modelOfAudi");
+    }
+}
+interface BMW {
+    default void modelOfBMW(){
+         System.out.println("This is a modelOfBMW");
+    }
+}
+class Car implements Audi,BMW {
+    Car(){
+         System.out.println("This is a Cars");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Car obj=new Car();
+        obj.modelOfAudi();
+        obj.modelOfBMW();
+    }
+}
+
+//Output
+This is a Cars
+This is a modelOfAudi
+This is a modelOfBMW
