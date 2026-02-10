@@ -1,0 +1,26 @@
+//Program
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int a = sc.nextInt();
+	        int reverse = 0;
+	        int temp = a;
+	        while(a>0){
+	        int b=a%10;
+	        reverse= reverse*10 + b;
+	        a = a/10;
+}
+if(temp==reverse){
+    System.out.println("true");
+}
+else{
+    System.out.println("false");
+}
+}
+}
+//Output
+121
+true
+
