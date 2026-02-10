@@ -1,0 +1,58 @@
+//Program
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+	    
+	        String str = sc.nextLine();{
+	        System.out.println(str);
+		
+		int a = sc.nextInt();{
+		System.out.println(a);
+
+	        byte b = sc.nextByte();{
+	        System.out.println(b);
+		
+		short c = sc.nextShort();{
+		System.out.println(c);
+		
+		char d = sc.next().charAt(0);{
+		System.out.println(d);
+		    
+		float e = sc.nextFloat();{
+		System.out.println(e);
+		    
+		long f = sc.nextLong();{
+		System.out.println(f);
+		    
+		double g = sc.nextDouble();{
+		System.out.println(g);	
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+
+//Output
+Hello Everyone
+Hello Everyone
+123456
+123456
+126
+126
+23
+23
+a
+a
+23.87
+23.87
+23456
+23456
+23.56789
+23.56789
