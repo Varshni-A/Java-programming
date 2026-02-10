@@ -1,0 +1,26 @@
+//Program
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a,b,c,sum = 0;
+        a = sc.nextInt();
+        b = a;
+        while (b > 0) {
+            c= b % 10;
+            sum = sum + (c*c*c);
+            b = b / 10;
+        }
+        if (sum == a){
+            System.out.println("Armstrong Number");
+        }
+        else{
+            System.out.println("Not an Armstrong Number");
+        }
+    }
+}
+
+
+//Output
+153
+Armstrong Number
