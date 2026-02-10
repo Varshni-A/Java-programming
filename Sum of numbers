@@ -28,3 +28,26 @@ sum of all numbers:
 3 + 4 = 7
 4 + 5 = 9
 
+
+//Program
+//Sum
+import java.util.*;
+public class Main{
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+	    int a = sc.nextInt();{
+	        int sum=0;
+	        while(a>0){
+	            int r = a%10;
+	            sum=sum+r;
+	            a=a/10;
+	        }
+		System.out.println(sum);
+}
+}
+}
+
+//Output
+1234
+10
+
